@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+body {
+  background-image: url(http://www.ukweatherforecast.co.uk/wp-content/uploads/2013/07/sunny_clouds_sky.jpg);
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+.loader-panel {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+.loader {
+  border: 10px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 10px solid #3498db;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.loader-text {
+  margin: 25px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.country-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.country {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+}
+img.flag {
+  border: 1px dotted green;
+  width: 20px;
+  margin-right: 5px;
+}
+p.country-name {
+  font-size: 16px;
+}
+
+.city {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 0;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+}
+.description {
+  text-align: center;
+  margin-top: -20px;
+}
+.temperature {
+  display: flex;
+  align-items: center;
+  font-size: 65px;
+  margin: auto;
+}
+.description {
+  font-size: 1.5em;
+}
+.temp-ext {
+  text-decoration: none;
+  color: black;
+  margin-left: 15px;
+}
+.icon {
+  width: 120px;
+  height: 120px;
+}
+
+hr {
+  margin-top: 1em;
+  margin-bottom: 0.25em;
+  border-width: 2px;
+  /*border: 1px darkblue solid;*/
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.block {
+  padding: 2px;
+  text-align: center;
+  flex: 1 0 auto;
+}
+.result {
+  font-weight: bold;
+  padding-top: 0.4em;
+  font-size: 14px;
+}

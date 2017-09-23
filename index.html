@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Local Weather App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="country-details">
+        <div class="country">
+          <img class="flag" src="" alt="">
+          <p class="country-name"></p>
+        </div>
+        <p class="city"></p>
+      </div>
+
+      <div class="weather">
+        <div class="temperature">
+          <img class="icon" src="" alt="">
+          <p class="temp"></p><a href="#" class="temp-ext">C</a>
+        </div>
+        <p class="description"></p>
+      </div>
+
+      <hr>
+
+      <div class="details">
+        <div class="block">
+          <p>Temperature Min/Max</p>
+          <p class="min-max-temp result"></p>
+        </div>
+        <div class="block">
+          <p>Humidity</p>
+          <p class="humidity result"></p>
+        </div>
+        <div class="block">
+          <p>Pressure</p>
+          <p class="pressure result"></p>
+        </div>
+        <div class="block">
+          <p>Wind Speed</p>
+          <p class="wind-speed result"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="loader-panel">
+      <h2 class="loader-text">Welcome to <a href="https://www.freecodecamp.com/easygater">easygater's</a> Weather App</h2>
+      <div class="loader"></div>
+      <p class="loader-text">Please wait ...</p>
+    </div>
+
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="scripts.js"></script>
+  </body>
+</html>
